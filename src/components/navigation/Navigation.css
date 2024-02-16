@@ -3,17 +3,78 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    color: #e4e4e3;
 }
+
+.custom-toggler {
+    /*background-color: #fcf804; */
+    border: none;
+    background: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-toggler .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-toggler::before,
+.custom-toggler .navbar-toggler-icon,
+.custom-toggler::after {
+  display: block;
+  width: 30px; /* Width of the bars */
+  height: 3px; /* Height of the bars */
+  background-color: #000; /* Default color, will be overridden for each bar */
+  margin: 6px 0; /* Space between bars */
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-toggler::before {
+    content: '';
+    background-color: #e4e4e3; /* Color for the top bar */
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+    background-color: #e4e4e3; /* Color for the middle bar */
+  }
+  
+  .custom-toggler::after {
+    content: '';
+    background-color: #e4e4e3; /* Color for the bottom bar */
+  }
 
 .navigation-links {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: aliceblue;
+}
+
+.navigation-links .navigation-link {
+    color: #e4e4e3;
 }
 
 .main-nav {
-    background-color: #DFE3E4;
+    background-color: rgba(223,227,228,0.0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(223,227,228,0.2);
 }
 
 @media (max-width: 576px) {

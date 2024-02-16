@@ -1,0 +1,83 @@
+.landing-element {
+    background-image: url('./bgimage.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+}
+
+.background-tint {
+    background-color: rgba(3, 3, 3, 0.6);
+    background-blend-mode: multiply;
+}
+
+.landing-element .display-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.landing-element .display-text .display-title, 
+.landing-element .display-text .display-caption {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    color: #e4e4e3;
+}
+
+
+.landing-element .display-text .display-title {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 300%;
+}
+
+.landing-element .display-text .display-caption {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 125%;
+}
+
+@media screen and (max-width: 1176px) {
+    .landing-element .display-text .display-title {
+        font-weight: 800;
+        font-style: normal;
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 964px) {
+    .landing-element .display-text .display-caption {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .landing-element .display-text .display-title {
+        font-weight: 800;
+        font-style: normal;
+        font-size: 175%;
+    }
+    .landing-element .display-text .display-caption {
+        font-weight: 800;
+        font-style: normal;
+        font-size: 80%;
+    }
+}
+
+.landing-element img {
+    width: 15%;
+    height: auto;
+    margin-right: 5%;
+}
